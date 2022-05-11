@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "vercel-template-blog-studio"
+    "name": "blazed-cms"
   },
   "api": {
-    "projectId": "YOUR_PROJECT_ID",
-    "dataset": "YOUR_DATASET_NAME"
+    "projectId": "dd7rhsob",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
