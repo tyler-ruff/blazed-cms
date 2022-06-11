@@ -1,3 +1,6 @@
+/*
+  Single blog post. Blogs are collected by author.
+*/
 export default {
   name: 'post',
   title: 'Post',
@@ -24,23 +27,20 @@ export default {
       to: {type: 'author'},
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: {type: 'category'},
     },
     {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
+    },
+    {
+      name: 'summary',
+      title: 'Summary',
+      type: 'string',
     },
     {
       name: 'body',
@@ -52,7 +52,9 @@ export default {
   preview: {
     select: {
       title: 'title',
+      category: 'category.name',
       author: 'author.name',
+      summary: 'summary',
       media: 'mainImage',
     },
     prepare(selection) {

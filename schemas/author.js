@@ -1,3 +1,6 @@
+/*
+  Single author. May be assigned to blog posts, magezine issues, newspaper issues, scholarly journal issues, and books.
+*/
 export default {
   name: 'author',
   title: 'Author',
