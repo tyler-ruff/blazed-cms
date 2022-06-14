@@ -1,9 +1,9 @@
 /*
-  Single issue of magezine, newspaper, or scholarly journal. All are collected by press.
+  Single issue of newspaper
 */
 export default {
-    name: 'issue',
-    title: 'Issue',
+    name: 'newspaper',
+    title: 'Newspaper',
     type: 'document',
     fields: [
       {
