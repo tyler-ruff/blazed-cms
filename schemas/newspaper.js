@@ -33,12 +33,6 @@ export default {
         to: {type: 'press'},
       },
       {
-        name: 'type',
-        title: 'Type',
-        type: 'reference',
-        to: {type: 'issueType'},
-      },
-      {
         name: 'cover',
         title: 'Issue Cover',
         type: 'image',
